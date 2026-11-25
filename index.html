@@ -185,7 +185,7 @@
             </div>
 
             <div>
-              <span class="stat-num">6</span>
+              <span class="stat-num">7</span>
               <span class="stat-label">End-to-End Projects</span>
             </div>
           </div>
@@ -233,7 +233,7 @@
         <p>The languages, methods, and tooling behind the projects below.</p>
       </div>
 
-      <!-- Skill cards: eight cards, so the wrapper reveals as a whole instead of using .stagger -->
+      <!-- Skill cards: nine cards, so the wrapper reveals as a whole instead of using .stagger -->
       <div class="skill-cards reveal">
 
         <div class="skill-card card">
@@ -367,6 +367,26 @@
 
         <div class="skill-card card">
           <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-robot"></i></div>
+            <div>
+              <h3>AI and LLMs</h3>
+              <p>LLM apps, agents, and evals</p>
+            </div>
+          </div>
+          <div class="skill-card-divider"></div>
+          <div class="skill-chips">
+            <span class="skill-chip">LLMs</span>
+            <span class="skill-chip">RAG</span>
+            <span class="skill-chip">Prompt Engineering</span>
+            <span class="skill-chip">API Integration</span>
+            <span class="skill-chip">AI Agents</span>
+            <span class="skill-chip">LLM Evals</span>
+            <span class="skill-chip">Claude / Claude Code</span>
+          </div>
+        </div>
+
+        <div class="skill-card card">
+          <div class="skill-card-header">
             <div class="skill-card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
             <div>
               <h3>Business Analysis &amp; Delivery</h3>
@@ -380,6 +400,7 @@
             <span class="skill-chip">Agile/Scrum</span>
             <span class="skill-chip">JIRA</span>
             <span class="skill-chip">Confluence</span>
+            <span class="skill-chip">Salesforce</span>
           </div>
         </div>
 
@@ -402,7 +423,6 @@
             <span class="skill-chip">mypy</span>
             <span class="skill-chip">Jupyter</span>
             <span class="skill-chip">Typer</span>
-            <span class="skill-chip">Claude Code</span>
             <span class="skill-chip">Unix Command Line</span>
           </div>
         </div>
@@ -420,7 +440,7 @@
       <div class="projects-header reveal">
         <span class="section-label">What I've Built</span>
         <h2 class="section-title" style="margin-top:16px">Selected <span class="accent">Projects</span></h2>
-        <p>Six end-to-end systems. Each card shows real output, and each repo ships with tests and documented
+        <p>Seven end-to-end systems. Each card shows real output, and each repo ships with tests and documented
           tradeoffs.</p>
         <div class="proj-divider"></div>
       </div>
@@ -468,7 +488,7 @@
             </div>
           </div>
           <div class="project-info">
-            <h3>Groundswell</h3>
+            <h3>Groundswell: Expansion Signal Detector</h3>
             <p>Account usage analytics and alerting over daily telemetry (compute, seats, workspaces, feature
               breadth) for a 60-account portfolio. Five rule-based detectors using window medians and
               weekday-matched baselines separate durable change from noise, feeding composite scoring and
@@ -517,7 +537,7 @@
         <div class="project-card card">
           <div class="project-img">
             <img src="website-images/rxdelta-card.png"
-              alt="Rxdelta report header showing coverage changes between two monthly CMS Part D snapshots across 5,517 plans"
+              alt="Rxdelta report header showing coverage changes between two monthly CMS Part D snapshots across 5,518 plans"
               width="1200" height="750" loading="lazy" />
             <span class="project-tag">CLI + Reporting</span>
             <div class="project-overlay">
@@ -528,7 +548,7 @@
             </div>
           </div>
           <div class="project-info">
-            <h3>Rxdelta</h3>
+            <h3>Rxdelta: Medicare Part D Formulary Change Monitor</h3>
             <p>Medicare Part D formulary change monitor. Loads two monthly CMS releases, roughly 1.1M formulary
               rows per month across 5,518 plans, into partitioned SQLite with a full audit trail, then classifies
               tier moves, prior authorization, step therapy, quantity limits, additions, and drops and ranks them
@@ -560,7 +580,7 @@
             </div>
           </div>
           <div class="project-info">
-            <h3>Causal Impact of Mid-Season Managerial Changes</h3>
+            <h3>Managerial Change Impact Study</h3>
             <p>Propensity Score Matching combined with Difference-in-Differences to estimate the causal effect of
               mid-season manager firings across 68,404 matches, the top 20 European leagues, and six seasons
               (2019/20 to 2024/25). Estimated +0.292 xGD per match over 12 matchweeks, 95% CI [0.192, 0.392],
@@ -592,7 +612,7 @@
             </div>
           </div>
           <div class="project-info">
-            <h3>The Oracle</h3>
+            <h3>The Oracle: World Cup 2026 Prediction Bot</h3>
             <p>World Cup 2026 prediction bot. A transparent Elo-style rating model computes win probabilities and
               passes only the computed numbers to an LLM for commentary, so the narration cannot invent scores or
               statistics. Renders shareable 1200x720 PNG cards with team flags, pick, probability split, and
@@ -668,7 +688,7 @@
 
         <div class="timeline-item card">
           <div class="timeline-top">
-            <h3>Business / Data Analyst</h3>
+            <h3>Data Analyst</h3>
             <span class="timeline-period">Jun 2025 to Present</span>
           </div>
           <p class="timeline-org">Choice Hotels, Los Angeles, CA</p>
@@ -730,11 +750,12 @@
 
       <div class="education-header reveal">
         <span class="section-label">Background</span>
-        <h2 class="section-title" style="margin-top:16px">My <span class="accent">Education</span></h2>
-        <p>The degree behind the projects.</p>
+        <h2 class="section-title" style="margin-top:16px">Education &amp; <span class="accent">Certifications</span>
+        </h2>
+        <p>The degree behind the projects, plus the certification in progress behind the BI work.</p>
       </div>
 
-      <div class="education-grid stagger" style="grid-template-columns:1fr">
+      <div class="education-grid stagger">
 
         <div class="edu-card card">
           <div class="skill-card-header">
@@ -754,6 +775,19 @@
             <span class="skill-chip">Data Mining</span>
             <span class="skill-chip">Linear Algebra</span>
             <span class="skill-chip">Probability and Statistics</span>
+          </div>
+        </div>
+
+        <div class="cert-list">
+          <div class="cert-card card">
+            <div class="cert-main">
+              <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div>
+                <h4>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h4>
+                <p>Microsoft</p>
+              </div>
+            </div>
+            <span class="project-chip">In progress</span>
           </div>
         </div>
 
