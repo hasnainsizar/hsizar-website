@@ -109,6 +109,24 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal, .stagger').forEach(el => revealObserver.observe(el));
 
+/* ── Lazy Tableau embed ── */
+// <tableau-viz> stays inert until this script defines it. A display:none frame
+// (under 768px) never intersects, so phones never load Tableau.
+const hotelDashboard = document.getElementById('hotelDashboard');
+
+if (hotelDashboard) {
+  const embedObserver = new IntersectionObserver((entries) => {
+    if (!entries[0].isIntersecting) return;
+    embedObserver.disconnect();
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = 'https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js';
+    document.head.appendChild(script);
+  }, { rootMargin: '200px' });
+
+  embedObserver.observe(hotelDashboard);
+}
+
 /* ── Smooth anchor scroll ── */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {

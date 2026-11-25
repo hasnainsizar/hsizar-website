@@ -134,7 +134,7 @@
 
           <div class="location-line">
             <i class="fa-solid fa-location-dot"></i>
-            <span>Chino, CA</span>
+            <span>Cerritos, CA</span>
             <span style="color:var(--text-muted)">·</span>
             <span class="available-dot">Open to data science roles</span>
           </div>
@@ -427,6 +427,34 @@
 
       <div class="project-grid stagger">
 
+        <!-- Hotel Revenue Analytics -->
+        <div class="project-card card">
+          <div class="project-img">
+            <img src="website-images/hotel-revenue-analytics.png"
+              alt="Hotel Revenue Analytics dashboard, Overview page"
+              width="1272" height="815" loading="lazy" />
+            <span class="project-tag">Dashboard</span>
+            <div class="project-overlay">
+              <a class="overlay-btn"
+                href="https://public.tableau.com/app/profile/hasnain.sizar/viz/HotelRevenueAnalytics_17955572469610/Overview"
+                target="_blank" rel="noopener" aria-label="View live dashboard" title="View live dashboard"><i
+                  class="fa-solid fa-chart-column"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Hotel Revenue Analytics</h3>
+            <p>Three-page Tableau dashboard built on 119K bookings from two hotels. Splits a 28% RevPAR gain into
+              occupancy and rate effects, compares what each booking channel pays after commission (with a what-if
+              for moving OTA guests to direct), and shows booking pace and which bookings cancel.</p>
+            <div class="project-chips">
+              <span class="project-chip">Tableau</span>
+              <span class="project-chip">Python</span>
+              <span class="project-chip">pandas</span>
+              <span class="project-chip">Revenue management</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Groundswell -->
         <div class="project-card card">
           <div class="project-img">
@@ -613,6 +641,15 @@
         </div>
 
       </div>
+
+      <!-- Live Tableau embed; script.js loads the Tableau library when this scrolls into view. Hidden under 768px. -->
+      <div class="dashboard-embed reveal">
+        <h3>Hotel Revenue Analytics, live</h3>
+        <div class="dashboard-embed-frame" id="hotelDashboard">
+          <tableau-viz src="https://public.tableau.com/views/HotelRevenueAnalytics_17955572469610/Overview"
+            width="1280" height="860" hide-tabs toolbar="bottom"></tableau-viz>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -772,7 +809,7 @@
                 <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <div>
                   <h4>Location</h4>
-                  <p>Chino, CA</p>
+                  <p>Cerritos, CA</p>
                 </div>
               </div>
             </div>
