@@ -24,6 +24,13 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
+## Updating the site
+
+Browsers cache `style.css`, `script.js`, and the resume PDF, so index.html
+loads each one with a version query such as `style.css?v=20261125`. When you
+change any of those files, set its `?v=` value in index.html to that day's
+date (YYYYMMDD) so browsers load the new file.
+
 ## Deploy to GitHub Pages
 
 1. Create a new empty repo on GitHub.
