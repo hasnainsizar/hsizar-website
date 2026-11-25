@@ -12,10 +12,10 @@ const CONTACT_PHONE = "562-386-4852";
 
 /* ── Typing effect ── */
 const phrases = [
-  "Forecasting demand in Python and SQL",
-  "Dashboards built on clean star schemas",
-  "ETL pipelines with data quality checks",
-  "A/B tests that inform real decisions"
+  "Applied AI and ML models in Python and SQL",
+  "Data prep on AWS S3, Redshift, and Athena",
+  "LLM prompts, RAG pipelines, and agents",
+  "ETL pipelines for fraud detection data"
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
 const typingEl = document.getElementById('typingText');
